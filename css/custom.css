@@ -1,6 +1,3 @@
-        body:not(.template-slider) #Header_wrapper {
-            background-image: url(images/home_mechanic_subheader.jpg)
-        }
 
         @media only screen and (min-width: 1240px) {
             body:not(.header-simple) #Top_bar #menu {
