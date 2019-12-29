@@ -2605,14 +2605,14 @@
         }
 
         body {
-            font-size: 13px;
+            font-size: 18px;
             line-height: 25px;
             font-weight: 400;
             letter-spacing: 0px;
         }
 
         .big {
-            font-size: 16px;
+            font-size: 20px;
             line-height: 28px;
             font-weight: 400;
             letter-spacing: 0px;
@@ -2654,7 +2654,7 @@
         }
 
         h3 {
-            font-size: 25px;
+            font-size: 28px;
             line-height: 29px;
             font-weight: 300;
             letter-spacing: 0px;
@@ -2668,14 +2668,14 @@
         }
 
         h5 {
-            font-size: 15px;
+            font-size: 18px;
             line-height: 25px;
             font-weight: 700;
             letter-spacing: 0px;
         }
 
         h6 {
-            font-size: 13px;
+            font-size: 18px;
             line-height: 25px;
             font-weight: 400;
             letter-spacing: 0px;
@@ -2815,4 +2815,8 @@
 
         form input.display-none {
             display: none !important
+        }
+
+        .navbarFontSize{
+            font-size: 18px;
         }
