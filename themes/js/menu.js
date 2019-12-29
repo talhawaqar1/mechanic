@@ -1,17 +1,12 @@
-/**
- * MuffinMenu
- *
- * Horizontal Multilevel Menu with WP MegaMenu Support
- * 3.0 | Muffin Group
- */
+/**Menu*/
 
-(function($) {
+(function ($) {
 
-	/* globals jQuery */
+  /* globals jQuery */
 
   "use strict";
 
-  $.fn.mfnMenu = function(options) {
+  $.fn.mfnMenu = function (options) {
 
     var menu = $(this);
 
@@ -26,7 +21,7 @@
     options = $.extend(defaults, options);
 
 
-    var init = function() {
+    var init = function () {
 
       // add '.submenu' class
 
@@ -59,20 +54,20 @@
 
     };
 
-    var doMenu = function() {
+    var doMenu = function () {
 
       if ((window.innerWidth >= options.mobileInit) || (!options.responsive)) {
 
         // desktop
 
-        $('> li, ul:not(.mfn-megamenu) li', menu).on('mouseenter', function() {
+        $('> li, ul:not(.mfn-megamenu) li', menu).on('mouseenter', function () {
 
           $(this).stop(true, true).addClass(options.hoverClass);
 
           $(this).children('ul').stop(true, true).fadeIn(options.delay);
 
 
-        }).on('mouseleave', function() {
+        }).on('mouseleave', function () {
 
           $(this).stop(true, true).removeClass(options.hoverClass);
 
@@ -86,7 +81,7 @@
 
         $('li', menu).off('hover');
 
-        $('li > .menu-toggle', menu).off('click').on('click', function() {
+        $('li > .menu-toggle', menu).off('click').on('click', function () {
 
           var el = $(this).closest('li');
 
@@ -110,7 +105,7 @@
 
     $(window).on('resize', doMenu);
 
-    var __constructor = function() {
+    var __constructor = function () {
       init();
       doMenu();
     };

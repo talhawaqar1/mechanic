@@ -1,15 +1,8 @@
-/**
- * Parallax
- *
- * Translate3d
- * 1.0 | Muffin Group
- */
-
 var mfnSetup = {
   translate: null
 };
 
-(function($) {
+(function ($) {
 
   /* globals jQuery */
 
@@ -21,7 +14,7 @@ var mfnSetup = {
 
   // has3d
 
-  var has3d = function() {
+  var has3d = function () {
 
     if (!window.getComputedStyle) {
       return false;
@@ -53,7 +46,7 @@ var mfnSetup = {
 
   // browserPrefix
 
-  var browserPrefix = function() {
+  var browserPrefix = function () {
 
     var el = document.createElement('div'),
       vendor = ["ms", "O", "Webkit", "Moz"],
@@ -70,17 +63,17 @@ var mfnSetup = {
 
   // __construct
 
-  var __construct = function() {
+  var __construct = function () {
 
     if (has3d()) {
 
-      mfnSetup.translate = function(el, x, y) {
+      mfnSetup.translate = function (el, x, y) {
         el.css('-' + browserPrefix() + '-transform', 'translate3d(' + x + ', ' + y + ', 0)');
       };
 
     } else {
 
-      mfnSetup.translate = function(el, x, y) {
+      mfnSetup.translate = function (el, x, y) {
         el.css({
           "left": x,
           "top": y
@@ -94,7 +87,7 @@ var mfnSetup = {
 
 })(jQuery);
 
-(function($) {
+(function ($) {
 
   "use strict";
 
@@ -102,7 +95,7 @@ var mfnSetup = {
    * $.fn.mfnParallax
    */
 
-  $.fn.mfnParallax = function() {
+  $.fn.mfnParallax = function () {
 
     var el = $(this),
       parent = el.parent(),
@@ -111,7 +104,7 @@ var mfnSetup = {
 
     // imageSize
 
-    var imageSize = function(img) {
+    var imageSize = function (img) {
 
       var w, h, l, t; // width, height, left, top
 
@@ -157,7 +150,7 @@ var mfnSetup = {
 
     // parallax
 
-    var parallax = function() {
+    var parallax = function () {
 
       var scrollTop = $(window).scrollTop(),
         scrollDiff, ratio, translateTop;
@@ -179,11 +172,11 @@ var mfnSetup = {
 
     // init
 
-    var init = function() {
+    var init = function () {
 
       windowH = $(window).height();
 
-      var initElement = function() {
+      var initElement = function () {
 
         var size = imageSize(el);
 
@@ -204,7 +197,7 @@ var mfnSetup = {
 
       element = initElement();
 
-      var initParent = function() {
+      var initParent = function () {
 
         var min = parent.offset().top - $(window).height();
         var max = parent.offset().top + $(parent).outerHeight();
@@ -221,9 +214,9 @@ var mfnSetup = {
 
     // reload
 
-    var reload = function() {
+    var reload = function () {
 
-      setTimeout(function() {
+      setTimeout(function () {
         init();
         parallax();
       }, 50);
@@ -242,11 +235,11 @@ var mfnSetup = {
    * Specify a function to execute when the DOM is fully loaded.
    */
 
-  $(document).ready(function() {
+  $(document).ready(function () {
 
     if ($(".mfn-parallax").length) {
 
-      $(".mfn-parallax").each(function() {
+      $(".mfn-parallax").each(function () {
         $(this).mfnParallax();
       });
 

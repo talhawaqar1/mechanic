@@ -13,57 +13,6 @@
     <meta name=viewport content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="shortcut icon" href=themes/images/favicon.ico type=image/x-icon>
     <link rel=dns-prefetch href=http://fonts.googleapis.com/>
-    <script>
-        window._wpemojiSettings = {
-            "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/",
-            "ext": ".png",
-            "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/",
-            "svgExt": ".svg",
-            "source": {
-                "concatemoji": "https:\/\/themes.muffingroup.com\/be\/mechanic\/wp-includes\/js\/wp-emoji-release.min.js"
-            }
-        };
-        ! function(a, b, c) {
-            function d(a, b) {
-                var c = String.fromCharCode;
-                l.clearRect(0, 0, k.width, k.height), l.fillText(c.apply(this, a), 0, 0);
-                var d = k.toDataURL();
-                l.clearRect(0, 0, k.width, k.height), l.fillText(c.apply(this, b), 0, 0);
-                var e = k.toDataURL();
-                return d === e
-            }
-
-            function e(a) {
-                var b;
-                if (!l || !l.fillText) return !1;
-                switch (l.textBaseline = "top", l.font = "600 32px Arial", a) {
-                    case "flag":
-                        return !(b = d([55356, 56826, 55356, 56819], [55356, 56826, 8203, 55356, 56819])) && (b = d([55356, 57332, 56128, 56423, 56128, 56418, 56128, 56421, 56128, 56430, 56128, 56423, 56128, 56447], [55356, 57332, 8203, 56128, 56423, 8203, 56128, 56418, 8203, 56128, 56421, 8203, 56128, 56430, 8203, 56128, 56423, 8203, 56128, 56447]), !b);
-                    case "emoji":
-                        return b = d([55357, 56424, 55356, 57342, 8205, 55358, 56605, 8205, 55357, 56424, 55356, 57340], [55357, 56424, 55356, 57342, 8203, 55358, 56605, 8203, 55357, 56424, 55356, 57340]), !b
-                }
-                return !1
-            }
-
-            function f(a) {
-                var c = b.createElement("script");
-                c.src = a, c.defer = c.type = "text/javascript", b.getElementsByTagName("head")[0].appendChild(c)
-            }
-            var g, h, i, j, k = b.createElement("canvas"),
-                l = k.getContext && k.getContext("2d");
-            for (j = Array("flag", "emoji"), c.supports = {
-                    everything: !0,
-                    everythingExceptFlag: !0
-                }, i = 0; i < j.length; i++) c.supports[j[i]] = e(j[i]), c.supports.everything = c.supports.everything && c.supports[j[i]], "flag" !== j[i] && (c.supports.everythingExceptFlag = c.supports.everythingExceptFlag && c.supports[j[i]]);
-            c.supports.everythingExceptFlag = c.supports.everythingExceptFlag && !c.supports.flag, c.DOMReady = !1, c.readyCallback = function() {
-                c.DOMReady = !0
-            }, c.supports.everything || (h = function() {
-                c.readyCallback()
-            }, b.addEventListener ? (b.addEventListener("DOMContentLoaded", h, !1), a.addEventListener("load", h, !1)) : (a.attachEvent("onload", h), b.attachEvent("onreadystatechange", function() {
-                "complete" === b.readyState && c.readyCallback()
-            })), g = c.source || {}, g.concatemoji ? f(g.concatemoji) : g.wpemoji && g.twemoji && (f(g.twemoji), f(g.wpemoji)))
-        }(window, document, window._wpemojiSettings);
-    </script>
     <style>
         img.wp-smiley,
         img.emoji {
@@ -89,7 +38,6 @@
             -ms-transition: all 0.2s ease-out
         }
     </style>
-    <link rel=stylesheet id=style-css href=themes/style.css type=text/css media=all>
     <link rel=stylesheet id=mfn-base-css href=themes/css/base.css type=text/css media=all>
     <link rel=stylesheet id=mfn-layout-css href=themes/css/layout.css type=text/css media=all>
     <link rel=stylesheet id=mfn-shortcodes-css href=themes/css/shortcodes.css type=text/css media=all>
@@ -104,11 +52,6 @@
     <script src=js/jquery/jquery-migrate.min.js></script>
     <script src=plugins/revslider/public/assets/js/revolution.tools.min.js></script>
     <script src=plugins/revslider/public/assets/js/rs6.min.js></script>
-    <link rel=EditURI type=application/rsd+xml title=RSD href=xmlrpc0db0.html?rsd>
-    <link rel=wlwmanifest type=application/wlwmanifest+xml href=wp-includes/wlwmanifest.xml>
-    <link rel=alternate type=application/json+oembed href="wp-json/oembed/1.0/embedef14.json?url=https%3A%2F%2Fthemes.muffingroup.com%2Fbe%2Fmechanic%2F">
-    <link rel=alternate type=text/xml+oembed href="wp-json/oembed/1.0/embed1017?url=https%3A%2F%2Fthemes.muffingroup.com%2Fbe%2Fmechanic%2F&amp;format=xml">
-    <meta name=generator content="Powered by Slider Revolution 6.1.2 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface.">
     <script>
         function setREVStartSize(t) {
             try {
@@ -208,7 +151,7 @@
                                     revslider_showDoubleJqueryError("#rev_slider_1_1");
                                 } else {
                                     revapi1 = tpj("#rev_slider_1_1").show().revolution({
-                                        jsFileLocation: "//themes.muffingroup.com/be/mechanic/plugins/revslider/public/assets/js/",
+                                        jsFileLocation: "plugins/revslider/public/assets/js/",
                                         visibilityLevels: "1240,1024,778,480",
                                         gridwidth: 1180,
                                         gridheight: 750,
@@ -548,7 +491,7 @@
             <div class=footer_copy>
                 <div class=container>
                     <div class="column one"><a id=back_to_top class="button button_js" href><i class=icon-up-open-big></i></a>
-                        <div class=copyright> &copy; 2019 BeMechanic - BeTheme. All Rights Reserved. <a target=_blank rel=nofollow href=https://muffingroup.com/>Muffin group</a>
+                        <div class=copyright> &copy; 2019 BeMechanic - BeTheme. All Rights Reserved. <a target=_blank rel=nofollow href=https://web.com/>Muffin group</a>
                         </div>
                         <ul class=social></ul>
                     </div>
@@ -575,279 +518,279 @@
                         </a>
                     </li>
                     <li>
-                        <a target=_blank href="images/demospa4/?utm_source=demos"><img width=182 height=155 src=images/demo/spa4.jpg alt="BeSpa 4"><span class=mask><span style=color:#b7c958;>Be|</span>Spa 4</span>
+                        <a target=_blank href="images/demospa4"><img width=182 height=155 src=images/demo/spa4.jpg alt="BeSpa 4"><span class=mask><span style=color:#b7c958;>Be|</span>Spa 4</span>
                         </a>
                     </li>
                     <li>
-                        <a target=_blank href="images/demohosting3/?utm_source=demos"><img width=182 height=155 src=images/demo/hosting3.jpg alt="BeHosting 3"><span class=mask><span style=color:#6de0f6;>Be|</span>Hosting 3</span>
+                        <a target=_blank href="images/demohosting3"><img width=182 height=155 src=images/demo/hosting3.jpg alt="BeHosting 3"><span class=mask><span style=color:#6de0f6;>Be|</span>Hosting 3</span>
                         </a>
                     </li>
                     <li>
-                        <a target=_blank href="images/demovideo3/?utm_source=demos"><img width=182 height=155 src=images/demo/video3.jpg alt="BeVideo 3"><span class=mask><span style=color:#ef2121;>Be|</span>Video 3</span>
+                        <a target=_blank href="images/demovideo3"><img width=182 height=155 src=images/demo/video3.jpg alt="BeVideo 3"><span class=mask><span style=color:#ef2121;>Be|</span>Video 3</span>
                         </a>
                     </li>
                     <li>
-                        <a target=_blank href="images/demomarathon/?utm_source=demos"><img width=182 height=155 src=images/demo/marathon.jpg alt=BeMarathon><span class=mask><span style=color:#724fd4;>Be|</span>Marathon</span>
+                        <a target=_blank href="images/demomarathon"><img width=182 height=155 src=images/demo/marathon.jpg alt=BeMarathon><span class=mask><span style=color:#724fd4;>Be|</span>Marathon</span>
                         </a>
                     </li>
                     <li>
-                        <a target=_blank href="images/demotaxi2/?utm_source=demos"><img width=182 height=155 src=images/demo/taxi2.jpg alt="BeTaxi 2"><span class=mask><span style=color:#feba12;>Be|</span>Taxi 2</span>
+                        <a target=_blank href="images/demotaxi2"><img width=182 height=155 src=images/demo/taxi2.jpg alt="BeTaxi 2"><span class=mask><span style=color:#feba12;>Be|</span>Taxi 2</span>
                         </a>
                     </li>
                     <li>
-                        <a target=_blank href="images/demoboxing/?utm_source=demos"><img width=182 height=155 src=images/demo/boxing.jpg alt=BeBoxing><span class=mask><span style=color:#c3af7e;>Be|</span>Boxing</span>
+                        <a target=_blank href="images/demoboxing"><img width=182 height=155 src=images/demo/boxing.jpg alt=BeBoxing><span class=mask><span style=color:#c3af7e;>Be|</span>Boxing</span>
                         </a>
                     </li>
                     <li>
-                        <a target=_blank href="images/demowebinar/?utm_source=demos"><img width=182 height=155 src=images/demo/webinar.jpg alt=BeWebinar><span class=mask><span style=color:#81e1d0;>Be|</span>Webinar</span>
+                        <a target=_blank href="images/demowebinar"><img width=182 height=155 src=images/demo/webinar.jpg alt=BeWebinar><span class=mask><span style=color:#81e1d0;>Be|</span>Webinar</span>
                         </a>
                     </li>
                     <li>
-                        <a target=_blank href="images/demofactory2/?utm_source=demos"><img width=182 height=155 src=images/demo/factory2.jpg alt="BeFactory 2"><span class=mask><span style=color:#6383aa;>Be|</span>Factory 2</span>
+                        <a target=_blank href="images/demofactory2"><img width=182 height=155 src=images/demo/factory2.jpg alt="BeFactory 2"><span class=mask><span style=color:#6383aa;>Be|</span>Factory 2</span>
                         </a>
                     </li>
                     <li>
-                        <a target=_blank href="images/demoseajourney/?utm_source=demos"><img width=182 height=155 src=images/demo/seajourney.jpg alt=BeSeaJourney><span class=mask><span style=color:#e8d04b;>Be|</span>SeaJourney</span>
+                        <a target=_blank href="images/demoseajourney"><img width=182 height=155 src=images/demo/seajourney.jpg alt=BeSeaJourney><span class=mask><span style=color:#e8d04b;>Be|</span>SeaJourney</span>
                         </a>
                     </li>
                     <li>
-                        <a target=_blank href="images/demoprint3/?utm_source=demos"><img width=182 height=155 src=images/demo/print3.jpg alt="BePrint 3"><span class=mask><span style=color:#5445a6;>Be|</span>Print 3</span>
+                        <a target=_blank href="images/demoprint3"><img width=182 height=155 src=images/demo/print3.jpg alt="BePrint 3"><span class=mask><span style=color:#5445a6;>Be|</span>Print 3</span>
                         </a>
                     </li>
                     <li>
-                        <a target=_blank href="images/demoapp5/?utm_source=demos"><img width=182 height=155 src=images/demo/app5.jpg alt="BeApp 5"><span class=mask><span style=color:#ffb526;>Be|</span>App 5</span>
+                        <a target=_blank href="images/demoapp5"><img width=182 height=155 src=images/demo/app5.jpg alt="BeApp 5"><span class=mask><span style=color:#ffb526;>Be|</span>App 5</span>
                         </a>
                     </li>
                     <li>
-                        <a target=_blank href="images/demobiker3/?utm_source=demos"><img width=182 height=155 src=images/demo/biker3.jpg alt="BeBiker 3"><span class=mask><span style=color:#08d665;>Be|</span>Biker 3</span>
+                        <a target=_blank href="images/demobiker3"><img width=182 height=155 src=images/demo/biker3.jpg alt="BeBiker 3"><span class=mask><span style=color:#08d665;>Be|</span>Biker 3</span>
                         </a>
                     </li>
                     <li>
-                        <a target=_blank href="images/demohoney/?utm_source=demos"><img width=182 height=155 src=images/demo/honey.jpg alt=BeHoney><span class=mask><span style=color:#ffaf02;>Be|</span>Honey</span>
+                        <a target=_blank href="images/demohoney"><img width=182 height=155 src=images/demo/honey.jpg alt=BeHoney><span class=mask><span style=color:#ffaf02;>Be|</span>Honey</span>
                         </a>
                     </li>
                     <li>
-                        <a target=_blank href="images/democleaner2/?utm_source=demos"><img width=182 height=155 src=images/demo/cleaner2.jpg alt="BeCleaner 2"><span class=mask><span style=color:#44d6fe;>Be|</span>Cleaner 2</span>
+                        <a target=_blank href="images/democleaner2"><img width=182 height=155 src=images/demo/cleaner2.jpg alt="BeCleaner 2"><span class=mask><span style=color:#44d6fe;>Be|</span>Cleaner 2</span>
                         </a>
                     </li>
                     <li>
-                        <a target=_blank href="images/demoebook2/?utm_source=demos"><img width=182 height=155 src=images/demo/ebook2.jpg alt="BeeBook 2"><span class=mask><span style=color:#d89f92;>Be|</span>eBook 2</span>
+                        <a target=_blank href="images/demoebook2"><img width=182 height=155 src=images/demo/ebook2.jpg alt="BeeBook 2"><span class=mask><span style=color:#d89f92;>Be|</span>eBook 2</span>
                         </a>
                     </li>
                     <li>
-                        <a target=_blank href="images/demofestival/?utm_source=demos"><img width=182 height=155 src=images/demo/festival.jpg alt=BeFestival><span class=mask><span style=color:#f91e52;>Be|</span>Festival</span>
+                        <a target=_blank href="images/demofestival"><img width=182 height=155 src=images/demo/festival.jpg alt=BeFestival><span class=mask><span style=color:#f91e52;>Be|</span>Festival</span>
                         </a>
                     </li>
                     <li>
-                        <a target=_blank href="images/demogarden4/?utm_source=demos"><img width=182 height=155 src=images/demo/garden4.jpg alt="BeGarden 4"><span class=mask><span style=color:#bcba62;>Be|</span>Garden 4</span>
+                        <a target=_blank href="images/demogarden4"><img width=182 height=155 src=images/demo/garden4.jpg alt="BeGarden 4"><span class=mask><span style=color:#bcba62;>Be|</span>Garden 4</span>
                         </a>
                     </li>
                     <li>
-                        <a target=_blank href="images/demofootball2/?utm_source=demos"><img width=182 height=155 src=images/demo/football2.jpg alt="BeFootball 2"><span class=mask><span style=color:#fa1e3d;>Be|</span>Football 2</span>
+                        <a target=_blank href="images/demofootball2"><img width=182 height=155 src=images/demo/football2.jpg alt="BeFootball 2"><span class=mask><span style=color:#fa1e3d;>Be|</span>Football 2</span>
                         </a>
                     </li>
                     <li>
-                        <a target=_blank href="images/demoarchitect5/?utm_source=demos"><img width=182 height=155 src=images/demo/architect5.jpg alt="BeArchitect 5"><span class=mask><span style=color:#988e84;>Be|</span>Architect 5</span>
+                        <a target=_blank href="images/demoarchitect5"><img width=182 height=155 src=images/demo/architect5.jpg alt="BeArchitect 5"><span class=mask><span style=color:#988e84;>Be|</span>Architect 5</span>
                         </a>
                     </li>
                     <li>
-                        <a target=_blank href="images/democottage/?utm_source=demos"><img width=182 height=155 src=images/demo/cottage.jpg alt=BeCottage><span class=mask><span style=color:#c4d050;>Be|</span>Cottage</span>
+                        <a target=_blank href="images/democottage"><img width=182 height=155 src=images/demo/cottage.jpg alt=BeCottage><span class=mask><span style=color:#c4d050;>Be|</span>Cottage</span>
                         </a>
                     </li>
                     <li>
-                        <a target=_blank href="images/democompany5/?utm_source=demos"><img width=182 height=155 src=images/demo/company5.jpg alt="BeCompany 5"><span class=mask><span style=color:#0061d4;>Be|</span>Company 5</span>
+                        <a target=_blank href="images/democompany5"><img width=182 height=155 src=images/demo/company5.jpg alt="BeCompany 5"><span class=mask><span style=color:#0061d4;>Be|</span>Company 5</span>
                         </a>
                     </li>
                     <li>
-                        <a target=_blank href="images/democatering2/?utm_source=demos"><img width=182 height=155 src=images/demo/catering2.jpg alt="BeCatering 2"><span class=mask><span style=color:#eeb952;>Be|</span>Catering 2</span>
+                        <a target=_blank href="images/democatering2"><img width=182 height=155 src=images/demo/catering2.jpg alt="BeCatering 2"><span class=mask><span style=color:#eeb952;>Be|</span>Catering 2</span>
                         </a>
                     </li>
                     <li>
-                        <a target=_blank href="images/demodj2/?utm_source=demos"><img width=182 height=155 src=images/demo/dj2.jpg alt="BeDJ 2"><span class=mask><span style=color:#5cbe77;>Be|</span>DJ 2</span>
+                        <a target=_blank href="images/demodj2"><img width=182 height=155 src=images/demo/dj2.jpg alt="BeDJ 2"><span class=mask><span style=color:#5cbe77;>Be|</span>DJ 2</span>
                         </a>
                     </li>
                     <li>
-                        <a target=_blank href="images/demophotography2/?utm_source=demos"><img width=182 height=155 src=images/demo/photography2.jpg alt="BePhotography 2"><span class=mask><span style=color:#65666c;>Be|</span>Photography 2</span>
+                        <a target=_blank href="images/demophotography2"><img width=182 height=155 src=images/demo/photography2.jpg alt="BePhotography 2"><span class=mask><span style=color:#65666c;>Be|</span>Photography 2</span>
                         </a>
                     </li>
                     <li>
-                        <a target=_blank href="images/democode2/?utm_source=demos"><img width=182 height=155 src=images/demo/code2.jpg alt="BeCode 2"><span class=mask><span style=color:#63c994;>Be|</span>Code 2</span>
+                        <a target=_blank href="images/democode2"><img width=182 height=155 src=images/demo/code2.jpg alt="BeCode 2"><span class=mask><span style=color:#63c994;>Be|</span>Code 2</span>
                         </a>
                     </li>
                     <li>
-                        <a target=_blank href="images/demobar3/?utm_source=demos"><img width=182 height=155 src=images/demo/bar3.jpg alt="BeBar 3"><span class=mask><span style=color:#d5c6ae;>Be|</span>Bar 3</span>
+                        <a target=_blank href="images/demobar3"><img width=182 height=155 src=images/demo/bar3.jpg alt="BeBar 3"><span class=mask><span style=color:#d5c6ae;>Be|</span>Bar 3</span>
                         </a>
                     </li>
                     <li>
-                        <a target=_blank href="images/demodentist3/?utm_source=demos"><img width=182 height=155 src=images/demo/dentist3.jpg alt="BeDentist 3"><span class=mask><span style=color:#45d9d9;>Be|</span>Dentist 3</span>
+                        <a target=_blank href="images/demodentist3"><img width=182 height=155 src=images/demo/dentist3.jpg alt="BeDentist 3"><span class=mask><span style=color:#45d9d9;>Be|</span>Dentist 3</span>
                         </a>
                     </li>
                     <li>
-                        <a target=_blank href="images/demoevent4/?utm_source=demos"><img width=182 height=155 src=images/demo/event4.jpg alt="BeEvent 4"><span class=mask><span style=color:#ffeb28;>Be|</span>Event 4</span>
+                        <a target=_blank href="images/demoevent4"><img width=182 height=155 src=images/demo/event4.jpg alt="BeEvent 4"><span class=mask><span style=color:#ffeb28;>Be|</span>Event 4</span>
                         </a>
                     </li>
                     <li>
-                        <a target=_blank href="images/demositter2/?utm_source=demos"><img width=182 height=155 src=images/demo/sitter2.jpg alt="BeSitter 2"><span class=mask><span style=color:#a069b5;>Be|</span>Sitter 2</span>
+                        <a target=_blank href="images/demositter2"><img width=182 height=155 src=images/demo/sitter2.jpg alt="BeSitter 2"><span class=mask><span style=color:#a069b5;>Be|</span>Sitter 2</span>
                         </a>
                     </li>
                     <li>
-                        <a target=_blank href="images/demodesign3/?utm_source=demos"><img width=182 height=155 src=images/demo/design3.jpg alt="BeDesign 3"><span class=mask><span style=color:#00d664;>Be|</span>Design 3</span>
+                        <a target=_blank href="images/demodesign3"><img width=182 height=155 src=images/demo/design3.jpg alt="BeDesign 3"><span class=mask><span style=color:#00d664;>Be|</span>Design 3</span>
                         </a>
                     </li>
                     <li>
-                        <a target=_blank href="images/demophoto2/?utm_source=demos"><img width=182 height=155 src=images/demo/photo2.jpg alt="BePhoto 2"><span class=mask><span style=color:#f5e5d9;>Be|</span>Photo 2</span>
+                        <a target=_blank href="images/demophoto2"><img width=182 height=155 src=images/demo/photo2.jpg alt="BePhoto 2"><span class=mask><span style=color:#f5e5d9;>Be|</span>Photo 2</span>
                         </a>
                     </li>
                     <li>
-                        <a target=_blank href="images/demopsychologist/?utm_source=demos"><img width=182 height=155 src=images/demo/psychologist.jpg alt=BePsychologist><span class=mask><span style=color:#f46857;>Be|</span>Psychologist</span>
+                        <a target=_blank href="images/demopsychologist"><img width=182 height=155 src=images/demo/psychologist.jpg alt=BePsychologist><span class=mask><span style=color:#f46857;>Be|</span>Psychologist</span>
                         </a>
                     </li>
                     <li>
-                        <a target=_blank href="images/demohotel4/?utm_source=demos"><img width=182 height=155 src=images/demo/hotel4.jpg alt="BeHotel 4"><span class=mask><span style=color:#9cba5b;>Be|</span>Hotel 4</span>
+                        <a target=_blank href="images/demohotel4"><img width=182 height=155 src=images/demo/hotel4.jpg alt="BeHotel 4"><span class=mask><span style=color:#9cba5b;>Be|</span>Hotel 4</span>
                         </a>
                     </li>
                     <li>
-                        <a target=_blank href="images/demogym3/?utm_source=demos"><img width=182 height=155 src=images/demo/gym3.jpg alt="BeGym 3"><span class=mask><span style=color:#ff4e62;>Be|</span>Gym 3</span>
+                        <a target=_blank href="images/demogym3"><img width=182 height=155 src=images/demo/gym3.jpg alt="BeGym 3"><span class=mask><span style=color:#ff4e62;>Be|</span>Gym 3</span>
                         </a>
                     </li>
                     <li>
-                        <a target=_blank href="images/demoyoga3/?utm_source=demos"><img width=182 height=155 src=images/demo/yoga3.jpg alt="BeYoga 3"><span class=mask><span style=color:#d29d20;>Be|</span>Yoga 3</span>
+                        <a target=_blank href="images/demoyoga3"><img width=182 height=155 src=images/demo/yoga3.jpg alt="BeYoga 3"><span class=mask><span style=color:#d29d20;>Be|</span>Yoga 3</span>
                         </a>
                     </li>
                     <li>
-                        <a target=_blank href="images/demolab2/?utm_source=demos"><img width=182 height=155 src=images/demo/lab2.jpg alt="BeLab 2"><span class=mask><span style=color:#01cd61;>Be|</span>Lab 2</span>
+                        <a target=_blank href="images/demolab2"><img width=182 height=155 src=images/demo/lab2.jpg alt="BeLab 2"><span class=mask><span style=color:#01cd61;>Be|</span>Lab 2</span>
                         </a>
                     </li>
                     <li>
-                        <a target=_blank href="images/demopizza4/?utm_source=demos"><img width=182 height=155 src=images/demo/pizza4.jpg alt="BePizza 4"><span class=mask><span style=color:#0095eb;>Be|</span>Pizza 4</span>
+                        <a target=_blank href="images/demopizza4"><img width=182 height=155 src=images/demo/pizza4.jpg alt="BePizza 4"><span class=mask><span style=color:#0095eb;>Be|</span>Pizza 4</span>
                         </a>
                     </li>
                     <li>
-                        <a target=_blank href="images/demomechanic5/?utm_source=demos"><img width=182 height=155 src=images/demo/mechanic5.jpg alt="BeMechanic 5"><span class=mask><span style=color:#2000c2;>Be|</span>Mechanic 5</span>
+                        <a target=_blank href="images/demomechanic5"><img width=182 height=155 src=images/demo/mechanic5.jpg alt="BeMechanic 5"><span class=mask><span style=color:#2000c2;>Be|</span>Mechanic 5</span>
                         </a>
                     </li>
                     <li>
-                        <a target=_blank href="images/demomedic3/?utm_source=demos"><img width=182 height=155 src=images/demo/medic3.jpg alt="BeMedic 3"><span class=mask><span style=color:#cb6b55;>Be|</span>Medic 3</span>
+                        <a target=_blank href="images/demomedic3"><img width=182 height=155 src=images/demo/medic3.jpg alt="BeMedic 3"><span class=mask><span style=color:#cb6b55;>Be|</span>Medic 3</span>
                         </a>
                     </li>
                     <li>
-                        <a target=_blank href="images/demobarber3/?utm_source=demos"><img width=182 height=155 src=images/demo/barber3.jpg alt="BeBarber 3"><span class=mask><span style=color:#e9c664;>Be|</span>Barber 3</span>
+                        <a target=_blank href="images/demobarber3"><img width=182 height=155 src=images/demo/barber3.jpg alt="BeBarber 3"><span class=mask><span style=color:#e9c664;>Be|</span>Barber 3</span>
                         </a>
                     </li>
                     <li>
-                        <a target=_blank href="images/demoitservice2/?utm_source=demos"><img width=182 height=155 src=images/demo/itservice2.jpg alt="BeIT Service 2"><span class=mask><span style=color:#f3d14b;>Be|</span>IT Service 2</span>
+                        <a target=_blank href="images/demoitservice2"><img width=182 height=155 src=images/demo/itservice2.jpg alt="BeIT Service 2"><span class=mask><span style=color:#f3d14b;>Be|</span>IT Service 2</span>
                         </a>
                     </li>
                     <li>
-                        <a target=_blank href="images/demotransport2/?utm_source=demos"><img width=182 height=155 src=images/demo/transport2.jpg alt="BeTransport 2"><span class=mask><span style=color:#ffae00;>Be|</span>Transport 2</span>
+                        <a target=_blank href="images/demotransport2"><img width=182 height=155 src=images/demo/transport2.jpg alt="BeTransport 2"><span class=mask><span style=color:#ffae00;>Be|</span>Transport 2</span>
                         </a>
                     </li>
                     <li>
-                        <a target=_blank href="images/demomechanic4/?utm_source=demos"><img width=182 height=155 src=images/demo/mechanic4.jpg alt="BeMechanic 4"><span class=mask><span style=color:#ffeabc;>Be|</span>Mechanic 4</span>
+                        <a target=_blank href="images/demomechanic4"><img width=182 height=155 src=images/demo/mechanic4.jpg alt="BeMechanic 4"><span class=mask><span style=color:#ffeabc;>Be|</span>Mechanic 4</span>
                         </a>
                     </li>
                     <li>
-                        <a target=_blank href="images/demoyacht/?utm_source=demos"><img width=182 height=155 src=images/demo/yacht.jpg alt=BeYacht><span class=mask><span style=color:#6e7bf0;>Be|</span>Yacht</span>
+                        <a target=_blank href="images/demoyacht"><img width=182 height=155 src=images/demo/yacht.jpg alt=BeYacht><span class=mask><span style=color:#6e7bf0;>Be|</span>Yacht</span>
                         </a>
                     </li>
                     <li>
-                        <a target=_blank href="images/demosafari2/?utm_source=demos"><img width=182 height=155 src=images/demo/safari2.jpg alt="BeSafari 2"><span class=mask><span style=color:#c29f47;>Be|</span>Safari 2</span>
+                        <a target=_blank href="images/demosafari2"><img width=182 height=155 src=images/demo/safari2.jpg alt="BeSafari 2"><span class=mask><span style=color:#c29f47;>Be|</span>Safari 2</span>
                         </a>
                     </li>
                     <li>
-                        <a target=_blank href="images/demobaker2/?utm_source=demos"><img width=182 height=155 src=images/demo/baker2.jpg alt="BeBaker 2"><span class=mask><span style=color:#fdaa3a;>Be|</span>Baker 2</span>
+                        <a target=_blank href="images/demobaker2"><img width=182 height=155 src=images/demo/baker2.jpg alt="BeBaker 2"><span class=mask><span style=color:#fdaa3a;>Be|</span>Baker 2</span>
                         </a>
                     </li>
                     <li>
-                        <a target=_blank href="images/demohairdresser2/?utm_source=demos"><img width=182 height=155 src=images/demo/hairdresser2.jpg alt="BeHairdresser 2"><span class=mask><span style=color:#ccbcad;>Be|</span>Hairdresser 2</span>
+                        <a target=_blank href="images/demohairdresser2"><img width=182 height=155 src=images/demo/hairdresser2.jpg alt="BeHairdresser 2"><span class=mask><span style=color:#ccbcad;>Be|</span>Hairdresser 2</span>
                         </a>
                     </li>
                     <li>
-                        <a target=_blank href="images/demomountainguide/?utm_source=demos"><img width=182 height=155 src=images/demo/mountainguide.jpg alt="BeMountain Guide"><span class=mask><span style=color:#eedebe;>Be|</span>Mountain Guide</span>
+                        <a target=_blank href="images/demomountainguide"><img width=182 height=155 src=images/demo/mountainguide.jpg alt="BeMountain Guide"><span class=mask><span style=color:#eedebe;>Be|</span>Mountain Guide</span>
                         </a>
                     </li>
                     <li>
-                        <a target=_blank href="images/demoextreme2/?utm_source=demos"><img width=182 height=155 src=images/demo/extreme2.jpg alt="BeExtreme 2"><span class=mask><span style=color:#f03e31;>Be|</span>Extreme 2</span>
+                        <a target=_blank href="images/demoextreme2"><img width=182 height=155 src=images/demo/extreme2.jpg alt="BeExtreme 2"><span class=mask><span style=color:#f03e31;>Be|</span>Extreme 2</span>
                         </a>
                     </li>
                     <li>
-                        <a target=_blank href="images/demoevent3/?utm_source=demos"><img width=182 height=155 src=images/demo/event3.jpg alt="BeEvent 3"><span class=mask><span style=color:#ed7766;>Be|</span>Event 3</span>
+                        <a target=_blank href="images/demoevent3"><img width=182 height=155 src=images/demo/event3.jpg alt="BeEvent 3"><span class=mask><span style=color:#ed7766;>Be|</span>Event 3</span>
                         </a>
                     </li>
                     <li>
-                        <a target=_blank href="images/demoproduct4/?utm_source=demos"><img width=182 height=155 src=images/demo/product4.jpg alt="BeProduct 4"><span class=mask><span style=color:#ec465d;>Be|</span>Product 4</span>
+                        <a target=_blank href="images/demoproduct4"><img width=182 height=155 src=images/demo/product4.jpg alt="BeProduct 4"><span class=mask><span style=color:#ec465d;>Be|</span>Product 4</span>
                         </a>
                     </li>
                     <li>
-                        <a target=_blank href="images/demoresort2/?utm_source=demos"><img width=182 height=155 src=images/demo/resort2.jpg alt="BeResort 2"><span class=mask><span style=color:#e8b33d;>Be|</span>Resort 2</span>
+                        <a target=_blank href="images/demoresort2"><img width=182 height=155 src=images/demo/resort2.jpg alt="BeResort 2"><span class=mask><span style=color:#e8b33d;>Be|</span>Resort 2</span>
                         </a>
                     </li>
                     <li>
-                        <a target=_blank href="images/demobistro3/?utm_source=demos"><img width=182 height=155 src=images/demo/bistro3.jpg alt="BeBistro 3"><span class=mask><span style=color:#c27948;>Be|</span>Bistro 3</span>
+                        <a target=_blank href="images/demobistro3"><img width=182 height=155 src=images/demo/bistro3.jpg alt="BeBistro 3"><span class=mask><span style=color:#c27948;>Be|</span>Bistro 3</span>
                         </a>
                     </li>
                     <li>
-                        <a target=_blank href="images/demodanceschool/?utm_source=demos"><img width=182 height=155 src=images/demo/danceschool.jpg alt="BeDance School"><span class=mask><span style=color:#d03ca0;>Be|</span>Dance School</span>
+                        <a target=_blank href="images/demodanceschool"><img width=182 height=155 src=images/demo/danceschool.jpg alt="BeDance School"><span class=mask><span style=color:#d03ca0;>Be|</span>Dance School</span>
                         </a>
                     </li>
                     <li>
-                        <a target=_blank href="images/demosciencecentre/?utm_source=demos"><img width=182 height=155 src=images/demo/sciencecentre.jpg alt="BeScience Centre"><span class=mask><span style=color:#2d1aff;>Be|</span>Science Centre</span>
+                        <a target=_blank href="images/demosciencecentre"><img width=182 height=155 src=images/demo/sciencecentre.jpg alt="BeScience Centre"><span class=mask><span style=color:#2d1aff;>Be|</span>Science Centre</span>
                         </a>
                     </li>
                     <li>
-                        <a target=_blank href="images/demopolyglot/?utm_source=demos"><img width=182 height=155 src=images/demo/polyglot.jpg alt=BePolyglot><span class=mask><span style=color:#fd6969;>Be|</span>Polyglot</span>
+                        <a target=_blank href="images/demopolyglot"><img width=182 height=155 src=images/demo/polyglot.jpg alt=BePolyglot><span class=mask><span style=color:#fd6969;>Be|</span>Polyglot</span>
                         </a>
                     </li>
                     <li>
-                        <a target=_blank href="images/demointerior5/?utm_source=demos"><img width=182 height=155 src=images/demo/interior5.jpg alt="BeInterior 5"><span class=mask><span style=color:#f2ca6b;>Be|</span>Interior 5</span>
+                        <a target=_blank href="images/demointerior5"><img width=182 height=155 src=images/demo/interior5.jpg alt="BeInterior 5"><span class=mask><span style=color:#f2ca6b;>Be|</span>Interior 5</span>
                         </a>
                     </li>
                     <li>
-                        <a target=_blank href="images/democarpenter4/?utm_source=demos"><img width=182 height=155 src=images/demo/carpenter4.jpg alt="BeCarpenter 4"><span class=mask><span style=color:#f3f3f3;>Be|</span>Carpenter 4</span>
+                        <a target=_blank href="images/democarpenter4"><img width=182 height=155 src=images/demo/carpenter4.jpg alt="BeCarpenter 4"><span class=mask><span style=color:#f3f3f3;>Be|</span>Carpenter 4</span>
                         </a>
                     </li>
                     <li>
-                        <a target=_blank href="images/democompany4/?utm_source=demos"><img width=182 height=155 src=images/demo/company4.jpg alt="BeCompany 4"><span class=mask><span style=color:#3781ef;>Be|</span>Company 4</span>
+                        <a target=_blank href="images/democompany4"><img width=182 height=155 src=images/demo/company4.jpg alt="BeCompany 4"><span class=mask><span style=color:#3781ef;>Be|</span>Company 4</span>
                         </a>
                     </li>
                     <li>
-                        <a target=_blank href="images/democlub2/?utm_source=demos"><img width=182 height=155 src=images/demo/club2.jpg alt="BeClub 2"><span class=mask><span style=color:#5fe395;>Be|</span>Club 2</span>
+                        <a target=_blank href="images/democlub2"><img width=182 height=155 src=images/demo/club2.jpg alt="BeClub 2"><span class=mask><span style=color:#5fe395;>Be|</span>Club 2</span>
                         </a>
                     </li>
                     <li>
-                        <a target=_blank href="images/demoadventure2/?utm_source=demos"><img width=182 height=155 src=images/demo/adventure2.jpg alt="BeAdventure 2"><span class=mask><span style=color:#2fb28c;>Be|</span>Adventure 2</span>
+                        <a target=_blank href="images/demoadventure2"><img width=182 height=155 src=images/demo/adventure2.jpg alt="BeAdventure 2"><span class=mask><span style=color:#2fb28c;>Be|</span>Adventure 2</span>
                         </a>
                     </li>
                     <li>
-                        <a target=_blank href="images/demowhiskey/?utm_source=demos"><img width=182 height=155 src=images/demo/whiskey.jpg alt=BeWhiskey><span class=mask><span style=color:#ae9a44;>Be|</span>Whiskey</span>
+                        <a target=_blank href="images/demowhiskey"><img width=182 height=155 src=images/demo/whiskey.jpg alt=BeWhiskey><span class=mask><span style=color:#ae9a44;>Be|</span>Whiskey</span>
                         </a>
                     </li>
                     <li>
-                        <a target=_blank href="images/demoproduct3/?utm_source=demos"><img width=182 height=155 src=images/demo/product3.jpg alt="BeProduct 3"><span class=mask><span style=color:#4fcad4;>Be|</span>Product 3</span>
+                        <a target=_blank href="images/demoproduct3"><img width=182 height=155 src=images/demo/product3.jpg alt="BeProduct 3"><span class=mask><span style=color:#4fcad4;>Be|</span>Product 3</span>
                         </a>
                     </li>
                     <li>
-                        <a target=_blank href="images/demoorganic/?utm_source=demos"><img width=182 height=155 src=images/demo/organic.jpg alt=BeOrganic><span class=mask><span style=color:#ff173d;>Be|</span>Organic</span>
+                        <a target=_blank href="images/demoorganic"><img width=182 height=155 src=images/demo/organic.jpg alt=BeOrganic><span class=mask><span style=color:#ff173d;>Be|</span>Organic</span>
                         </a>
                     </li>
                     <li>
-                        <a target=_blank href="images/demomoving3/?utm_source=demos"><img width=182 height=155 src=images/demo/moving3.jpg alt="BeMoving 3"><span class=mask><span style=color:#d9c3ac;>Be|</span>Moving 3</span>
+                        <a target=_blank href="images/demomoving3"><img width=182 height=155 src=images/demo/moving3.jpg alt="BeMoving 3"><span class=mask><span style=color:#d9c3ac;>Be|</span>Moving 3</span>
                         </a>
                     </li>
                     <li>
-                        <a target=_blank href="images/demoarchitect4/?utm_source=demos"><img width=182 height=155 src=images/demo/architect4.jpg alt="BeArchitect 4"><span class=mask><span style=color:#c79b7a;>Be|</span>Architect 4</span>
+                        <a target=_blank href="images/demoarchitect4"><img width=182 height=155 src=images/demo/architect4.jpg alt="BeArchitect 4"><span class=mask><span style=color:#c79b7a;>Be|</span>Architect 4</span>
                         </a>
                     </li>
                     <li>
-                        <a target=_blank href="images/demoelectronics/?utm_source=demos"><img width=182 height=155 src=images/demo/electronics.jpg alt=BeElectronics><span class=mask><span style=color:#47de55;>Be|</span>Electronics</span>
+                        <a target=_blank href="images/demoelectronics"><img width=182 height=155 src=images/demo/electronics.jpg alt=BeElectronics><span class=mask><span style=color:#47de55;>Be|</span>Electronics</span>
                         </a>
                     </li>
                     <li>
-                        <a target=_blank href="images/demotea3/?utm_source=demos"><img width=182 height=155 src=images/demo/tea3.jpg alt="BeTea 3"><span class=mask><span style=color:#8aa932;>Be|</span>Tea 3</span>
+                        <a target=_blank href="images/demotea3"><img width=182 height=155 src=images/demo/tea3.jpg alt="BeTea 3"><span class=mask><span style=color:#8aa932;>Be|</span>Tea 3</span>
                         </a>
                     </li>
                     <li>
-                        <a target=_blank href="images/demohosting2/?utm_source=demos"><img width=182 height=155 src=images/demo/hosting2.jpg alt="BeHosting 2"><span class=mask><span style=color:#01ddd2;>Be|</span>Hosting 2</span>
+                        <a target=_blank href="images/demohosting2"><img width=182 height=155 src=images/demo/hosting2.jpg alt="BeHosting 2"><span class=mask><span style=color:#01ddd2;>Be|</span>Hosting 2</span>
                         </a>
                     </li>
                 </ul>
