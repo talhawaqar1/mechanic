@@ -1,6 +1,0 @@
-# HTTrack Website Copier Cookie File
-# This file format is compatible with Netscape cookies
-themes.muffingroup.com	TRUE	/	FALSE	1999999999	SameSite	Lax
-.muffingroup.com	TRUE	/	FALSE	1999999999	__cfduid	dfd354a135ea2b3b90061c54bba3aca291576752594
-muffingroup.com	TRUE	/	FALSE	1999999999	SameSite	Lax
-
